@@ -5,20 +5,20 @@ public class TurmDemo2 {
         getTowerCalculator(0);
     }
 
-    public static void getTowerCalculator(int zahl) {
-        // int zahl;
+    public static void getTowerCalculator(int number) {
+        // int number;
         int result;
 
         System.out.println("Geben Sie die gewünschte Zahl ein.");
         Scanner scanner = new Scanner(System.in);
-        zahl = scanner.nextInt();
-        result = zahl;
+        number = scanner.nextInt();
+        result = number;
 
         int counter = 2;
         while (counter <= 9) {
-            zahl = result;
-            result = zahl * counter;
-            System.out.println(zahl + " * " + counter + " = " + result);
+            number = result;
+            result = number * counter;
+            System.out.println(number + " * " + counter + " = " + result);
             counter++;
         }
     }
